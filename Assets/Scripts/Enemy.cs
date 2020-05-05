@@ -23,24 +23,12 @@ public class Enemy : MonoBehaviour
     void Start()
     {
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Controller.Player != null)
         {
-            var destinationTimer = 10f;
-            var v = Controller.Player.transform.position - transform.position;
-            var dist = v.magnitude;
-            _destinationTimer -= Time.deltaTime;
-            if (_destinationTimer <= 0f)
-            {
-                Character.Movement.MovePosition(Controller.Player.transform.position);
-                _destinationTimer = destinationTimer;
-            }
+            Character.Movement.MovePosition(Controller.Player.transform.position);
         }
-
-
     }
     /*private void OnCollisionEnter(Collision collision)
     {

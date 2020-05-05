@@ -8,14 +8,14 @@ public class Spawner : MonoBehaviour
 
     private bool _enterTrigger = false;
     private float _timer;
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         _enterTrigger = true;
-    }
+    }*/
     private void Update()
     {
         _timer -= Time.deltaTime;
-        if ((_timer < 0) && (CountEnemies > 0) && (_enterTrigger))
+        if ((_timer < 0) && (CountEnemies > 0))
         {
             Instantiate(EnemyPrefab, transform.position, transform.rotation);
             CountDecrease();

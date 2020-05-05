@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Support.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity/AllForOne/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
