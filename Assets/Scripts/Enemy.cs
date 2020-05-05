@@ -30,8 +30,8 @@ public class Enemy : MonoBehaviour
             Character.Movement.MovePosition(Controller.Player.transform.position);
         }
     }
-    /*private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
-    }*/
+    }
 }
