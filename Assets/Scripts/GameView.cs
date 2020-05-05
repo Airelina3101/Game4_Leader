@@ -10,6 +10,7 @@ public class GameView : MonoBehaviour
     public InputController InputController;
     public FollowCamera FollowCamera;
 
+
     public void Start()
     {
         SpawnPlayer();
@@ -24,5 +25,6 @@ public class GameView : MonoBehaviour
 
         InputController.SetPlayer(player);
         FollowCamera.Target = player.transform;
+        Controller.Player = player;
     }
 }
